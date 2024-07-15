@@ -89,6 +89,8 @@ Rails.application.configure do
 
   # Enable DNS rebinding protection and other `Host` header attacks.
   config.hosts = [
+    "ec2-52-220-47-151.ap-southeast-1.compute.amazonaws.com/",
+    /.*\.ec2-52-220-47-151\.ap-southeast-1\.compute\.amazonaws\.com/,
     "jophat.xyz",   # Allow requests from example.com
     /.*\.jophat\.xyz/ # Allow requests from subdomains like `www.example.com`
   ]
